@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600,700,900&display=swap');
+
+:root{
+    --color-primary: #071a52;
+    --color-secondary: #086972;
+    --feature-color: #17b978;
+    --remove: #FF6220;
+}
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+  
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+}
+
+.top{
+    height: 40vh;
+    background: linear-gradient(to bottom right, #071a52,#086972);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    padding:0;
+}
+
+.who{
+    display: flex;
+    font-size: 2rem;
+}
+.who h3{
+  line-height: 0;
+  margin: 1rem;
+  position: relative;
+}
+
+.who-background{
+   background: #e7ecfc44;
+   height: 5rem;
+   width: 8rem;
+   position: absolute;
+   transform: translate(-10px, -50%);
+   transition: 1s;
+}
+
+.brad, .emily{
+    cursor: pointer
+}
+
+.em-active .who-background{
+    transform: translate(90%, -50%);
+}
+
+.bottom{
+    background: #d7dfe4;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.add{
+    background-color: var(--feature-color);
+ 
+}
+.delete{
+    background: var(--remove);
+}
+
+
+button{
+    border: none;
+    padding: 1.5em 5em;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline:none;
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 5px;
+    border: none;
+    outline:none;
+}
+
+.list-item{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.list-item:not(:last-child){
+    border-bottom: 1px solid  #071a5238;
+}
+
+ul{
+    list-style-type: none;
+
+    padding-left: 0;
+}
+
+.list-container{
+    width: 40vw;
+}
+
+.icon{
+    cursor: pointer;
+}
+
