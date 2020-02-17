@@ -49,7 +49,7 @@ body{
    width: 8rem;
    position: absolute;
    transform: translate(-10px, -50%);
-   transition: 1s;
+   transition: .5s all cubic-bezier(1,-0.44,.77,1.55)
 }
 
 .brad, .emily{
